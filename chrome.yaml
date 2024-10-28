@@ -33,6 +33,10 @@ spec:
             value: "4443"
           - name: SE_EVENT_BUS_PUBLISH_PORT
             value: "4442"
+          - name: SE_SESSION_TIMEOUT
+            value: "60"   # 60 seconds idle session timeout
+          - name: SE_NODE_SESSION_TIMEOUT
+            value: "60"   # 60 seconds total session timeout
         resources:
           limits:
             memory: "1000Mi"
